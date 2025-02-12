@@ -1,0 +1,216 @@
+.services-container {
+    background-color: #EAE7E7;
+    color: #242424;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 48rem;
+}
+
+/* Services Sections */
+.services-wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.service-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-from-left {
+    transform: translateX(-100px);
+}
+
+.slide-from-right {
+    transform: translateX(100px);
+}
+
+.service-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.service-section.reverse {
+    direction: rtl;
+}
+
+.service-section.reverse > * {
+    direction: ltr;
+}
+
+.service-image {
+    position: relative;
+    aspect-ratio: 3/2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.service-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;    
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.service-list li::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Color variants for dots */
+.service-list.yellow li::before { background-color: #EAB308; }
+.service-list.red li::before { background-color: #DC2626; }
+.service-list.blue li::before { background-color: #2563EB; }
+.service-list.green li::before { background-color: #16A34A; }
+.service-list.purple li::before { background-color: #9333EA; }
+.service-list.orange li::before { background-color: #EA580C; }
+
+/* Animations */
+.animate-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .service-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .service-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service-section .service-image {
+        order: 1;
+    }
+
+    .service-section .service-content {
+        order: 2;
+    }
+
+    .service-section.reverse {
+        direction: ltr;
+    }
+
+    .service-content {
+        padding: 1rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Keep the slide direction consistent on mobile */
+    .slide-from-left,
+    .slide-from-right {
+        transform: translateY(50px);
+    }
+
+    .service-section.visible {
+        transform: translateY(0);
+    }
+}
