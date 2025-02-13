@@ -203,7 +203,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .h2Carousel {
     text-align: center;
@@ -219,6 +219,7 @@
     margin-right: 10%;
     margin-bottom: 1rem;
 }
+
 .section-description {
     text-align: center;
     max-width: 800px;

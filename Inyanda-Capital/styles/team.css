@@ -1,0 +1,131 @@
+.team-member-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 8rem 2rem 5rem;
+}
+
+.team-member-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.member-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.member-intro .position {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.member-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 for bio, 1/3 for details */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.member-bio {
+    order: 1;
+}
+
+.member-details {
+    order: 2;
+}
+
+.member-bio h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.member-bio p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.detail-section {
+    border: 2px solid #e9a82c;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.detail-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.detail-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-section li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.detail-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member-header {
+        grid-template-columns: 1fr;
+    }
+
+    .member-image {
+        height: 300px;
+    }
+
+    .member-content {
+        grid-template-columns: 1fr; /* Stack in mobile view */
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .member-bio {
+        order: 2; /* Move biography below in mobile */
+    }
+
+    .member-details {
+        order: 1; /* Move details above in mobile */
+    }
+
+    .detail-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .team-member-container {
+        padding: 6rem 1rem 3rem;
+    }
+} 

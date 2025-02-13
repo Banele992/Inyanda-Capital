@@ -6,7 +6,10 @@
     <title>Portfolio - Inyanda Capital</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="icon" href="/img/Inyanda-Icon.jpg" type="Inyanda-Logo" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -32,22 +35,110 @@
     <div class="gallery-container">
         <!-- Hero Section -->
         <div class="hero-section">
-            <div class="hero-image">
-                <img src="/Content/Our-Services.jpg" alt="Hero background">
+            <div class="video-background">
+                <video autoplay muted loop playsinline poster="/img/Portfolio.png">
+                    <source src="/vid/P2.mp4" type="video/mp4">
+                </video>
                 <div class="overlay"></div>
             </div>
-            <div class="hero-content">
+            <div class="hero-content animate-fade">
                 <h1>Our Portfolio</h1>
-                <p>Showcasing our expertise across various sectors</p>
+                <p>Showcasing our expertise<br> across various sectors</p>
             </div>
         </div>
 
-        <!-- Projects Grid -->
-        <div class="projects-section">
-            <div class="projects-grid">
-                <!-- Project cards will be dynamically inserted here -->
+         <!-- Portfolio Section -->
+         <div class="portfolio-container">
+            <h2 class="section-title">Our investments</h2>
+            <p class="section-description">
+                Central to Inyanda Capital's ethos is a steadfast belief of cultivating empowerment of small businesses, Inyanda believes in creating nodes that will sow long term economic sustainability in South Africa. A testament to this vision emerges through Inyanda's notable involvement in lifecheq, an enterprise buoyed by the partnership of African Rainbow Capital and Sanlam. This partnership underscores Inyanda Capital's pivotal role in fostering collaborative initiatives that are poised to drive meaningful transformation within the economic landscape.<br> Inyanda Capital strategically diversifies its investment portfolio, adopting a multifaceted approach that resonates with prudence and calculated risk management. Recognising that prudent allocation across diverse investment vehicles is pivotal to sustainable growth.
+            </p>
+            <div class="portfolio-section">                
+                <div class="portfolio-image">                    
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/Mine1.jpg" alt="Mining operation">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/Mine2.jpg" alt="Mining operations">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/Mine3.jpg" alt="Mining facility">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="subtitle">MINING</span>
+                    <h2>Inyanda Coal Mine</h2>
+                    <p> Inyanda Capital's investment in a coal mine, while seemingly at odds with global trends favoring renewable energy, reflects a strategic approach to South Africa's current energy landscape.  Recognizing the continued reliance on coal-fired power plants for the nation's electricity generation, Inyanda's investment aims to capitalize on the existing demand while also potentially supporting a just transition by ensuring responsible mining practices and contributing to local economic development in coal-producing regions.  This investment could also provide Inyanda with valuable experience and resources within the energy sector, potentially positioning them for future investments in cleaner energy technologies as the transition accelerates.  However, this decision also carries environmental risks and reputational considerations, requiring Inyanda to demonstrate a strong commitment to sustainability and mitigation efforts.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-section reverse">
+                <div class="portfolio-content">
+                    <span class="subtitle">REAL ESTATE</span>
+                    <h2>Peter Vale Shopping Centre</h2>
+                    <p>Situated next to the N1 highway and bounded by Rivonia, Bryanston, and Paulshof, Petervale is a bustling hub and situated at the centre of a residential area. The Centre, spanning over 2757m2 (GLA), hosts a blue-chip tenant, Pick n Pay, which has a lease period that expires in 2042.
+                        Its strategic location not only draws its attention from the surrounding residential area but also enjoys traffic from nearby schools and taxi rank.</p>  
+                    <p>Inyanda Capital's investment in the Peter Vale Shopping Centre is a strategic move that aligns with the company's commitment to creating value through responsible real estate investments. The Centre, located in the heart of Johannesburg's affluent residential areas, offers a unique opportunity to capitalize on the growing demand for retail space in the area. </p>
+                    <p> Situated strategically in the middle of a residential area and not too far from the busy roads like Witkoppen, the center enjoys traffic from the surrounding residents as well as those living upstairs in the center.
+                        Foot fall is also gained from near by taxi rank and Petervale Public Clinic.                        
+                        Using Pick n Pay as a benchmark we can estimate that the center has around 18 020 customers over a period of 52 weeks, we must note that these figures are collected from customers that have smart shopper accounts thus.</p>
+                </div>
+                <div class="portfolio-image">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/PV.png" alt="Real Estate">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/PV2.png" alt="Shopping Centre">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/PV3.jpg" alt="Building Interior">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-section">
+                <div class="portfolio-image">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/86-Logo.jpg" alt="Restaurant">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/86P2.jpeg" alt="Restaurant Interior">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/86P.jpg" alt="Dining Area">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="subtitle">LIFESTYLE</span>
+                    <h2>86 Public Randburg</h2>
+                    <p> 86 Public is not your average pizzeria nor does it aim to be your average bar. 86 Public is about creating a place where you can easily bring one or two of your good work mates out for a business lunch, and then have a memorable night out on the weekend. 1  Then still follow that up with the chilled day recovering from the night before on the weekends! Laid-back vibes ice cold, hand crafted cocktails in the sun, and some of the best food you can want for. It all seems pretty simple! 2    
+                    </p>
+                 </div>
             </div>
         </div>
+    </div>
     </div>
     
     <footer class="footer">
@@ -61,7 +152,7 @@
                     <a href="mailto:info@inyandacapital.co.za" class="contact-link">
                         <i class="fas fa-envelope"></i> info@inyandacapital.co.za
                     </a><br>
-                    <a href="https://maps.app.goo.gl/VsifyCiFCWxnaM5a6" target="_blank" rel="noopener" class="contact-link">
+                    <a href="https://maps.app.goo.gl/537ESwCZNwGurPwK7" target="_blank" rel="noopener" class="contact-link">
                         <i class="fas fa-location-dot"></i> Sandton,Johannesburg
                     </a>
                 </p>
@@ -90,5 +181,24 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/gallery.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html> 
